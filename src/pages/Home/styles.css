@@ -1,0 +1,75 @@
+.listMovies {
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.2rem;
+  margin: 14px auto;
+}
+
+.listMovies article {
+  border: 5px solid #1e1b1b;
+  width: 100%;
+  background-color: #121212;
+  border-radius: 4px;
+}
+
+.listMovies img {
+  width: 100%;
+  max-width: 98%;
+  max-height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.movieInfo {
+  height: 40px;
+  padding: 0px 5px;
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movieInfo p {
+  color: snow;
+  font-weight: bold;
+}
+
+.movieInfo span {
+  border: 1px solid #3b3434;
+  padding: 2px 8px;
+  margin-left: 5px;
+  border-radius: 10px;
+  background-color: #0b0b0b;
+  font-size: 12px;
+  color: snow;
+}
+
+.movieInfo2 {
+  display: flex;
+  padding: 0px 5px;
+  height: 40px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movieInfo2 p {
+  color: snow;
+}
+
+.btnWatchTrailer {
+  padding: 5px 10px;
+  background-color: #f36f45;
+  text-decoration: none;
+  color: snow;
+  border-radius: 4px;
+}
+
+.btnWatchTrailer:hover {
+  background-color: #b34929;
+  color: snow;
+  transition: 300ms;
+}
