@@ -21,7 +21,7 @@ const Home = () => {
       });
 
       // console.log(response.data.results.slice(0, 10));
-      setMovies(response.data.results.slice(0, 12));
+      setMovies(response.data.results.slice(0, 15));
       // Depois de setar o state, seta o loading para desativado
       setLoading(false);
     }
@@ -51,7 +51,7 @@ const Home = () => {
               <div className="movieInfo2">
                 <p>⭐{movie.vote_average}</p>
                 <Link className="btnWatchTrailer" to={`/movie/${movie.id}`}>
-                  Assista o Trailer
+                  Informações
                 </Link>
               </div>
             </article>

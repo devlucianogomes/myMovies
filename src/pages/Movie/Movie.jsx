@@ -52,11 +52,20 @@ const Movie = () => {
           alt=""
         />
 
-        <img
-          className="poster"
-          src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}
-          alt=""
-        />
+        <div className="movieDetailInfo">
+          <img
+            className="poster"
+            src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}
+            alt=""
+          />
+          <div className="detailsArea">
+            <h3 className="title">{movie.title}</h3>
+            <p className="info">Sinopse</p>
+            <p className="overview">{movie.overview}</p>{" "}
+            <button>Assistir ao Trailer</button>
+            <span>Favoritar</span>
+          </div>
+        </div>
       </div>
     </div>
   );

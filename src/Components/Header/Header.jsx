@@ -4,14 +4,24 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header>
-      <Link className="logo" to="/">
-        myMovies
-      </Link>
-      <Link className="favorites" to="/favorites">
-        Favorites
-      </Link>
-    </header>
+    <div className="topBar">
+      <header>
+        <Link className="logo" to="/">
+          myMovies
+        </Link>
+        <Link className="logo" to="/">
+          Filmes
+        </Link>
+        <Link className="logo" to="/">
+          Series
+        </Link>
+      </header>
+      <div className="favoriteBar">
+        <Link className="favorites" to="/favorites">
+          Favorites
+        </Link>
+      </div>
+    </div>
   );
 };
 

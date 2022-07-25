@@ -10,7 +10,6 @@ body {
 }
 
 .app {
-  border: 2px solid blueviolet;
   display: flex;
   width: 100%;
   justify-content: center;
